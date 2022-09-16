@@ -1,10 +1,15 @@
 public class Fizzbuzz{
   public String getResult(int number) {
+    String result = "";
     if(number%3 == 0){
-      return "Fizz";
-    }else if(number%5 == 0){
-      return "Buzz";
+      result += "Fizz";
     }
-    return String.valueOf(number);
+    if(number%5 == 0){
+      result += "Buzz";
+    }
+    if(result.equals("")){
+      result += number;
+    }
+    return result;
   }
 }
