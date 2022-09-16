@@ -29,4 +29,11 @@ public class FizzbuzzTest{
     String result = fizzbuzz.getResult(5);
     assertEquals("Buzz", result);
   }
+
+  @Test
+  public void returnsFizzBuzzIfGivenFifteen() {
+    Fizzbuzz fizzbuzz = new Fizzbuzz();
+    String result = fizzbuzz.getResult(15);
+    assertEquals("FizzBuzz", result);
+  }
 }
